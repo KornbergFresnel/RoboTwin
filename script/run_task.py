@@ -35,7 +35,7 @@ def get_camera_config(camera_type):
     return args[camera_type]
 
 def main():
-    task_name = input()
+    task_name = input("Please input task_name:")
     
     task = class_decorator(task_name)
     task_config_path = f'./task_config/{task_name}.yml'
